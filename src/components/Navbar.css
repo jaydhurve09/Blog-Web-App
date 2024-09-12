@@ -1,0 +1,133 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F9F7F3; /* Light beige background */
+    position: relative;
+  }
+  
+  .logo {
+    color: #2d2d2d; /* Dark teal logo color */
+    font-family: 'Georgia';
+    font-size: 2rem;
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: solid 2px #ffb627;
+    border-radius: 4px;
+    background-color: #fffefb; /* Light blue background */
+    color: #2d2d2d;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #ffb627; /* Coral button */
+    color: #F9F7F3; /* Light beige text */
+    cursor: pointer;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+  }
+  .search-bar button:hover{
+    background-color: #f4845f;
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links li a {
+    color: rgb(45, 45, 45); /* Dark teal text color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #f4845f; /* Soft yellow background on hover */
+    color: #F9F7F3; /* Light beige text on hover */
+    border-radius: 4px;
+  }
+  
+  /* Login Button */
+  .login-btn a {
+    color: #F9F7F3; /* Light beige */
+    background-color: #ffb627; /* Soft yellow background */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .login-btn a:hover {
+    background-color: #f4845f; /* Coral hover effect */
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2d2d2d; /* Dark teal */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #F9F7F3; /* Light beige */
+      height: calc(100vh - 60px);
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      padding: 0;
+      margin: 0;
+      z-index: 10;
+    }
+  
+    .nav-links.open {
+      transform: translateX(0);
+    }
+  
+    .nav-links li {
+      margin: 1.5rem 0;
+    }
+  
+    .nav-links li a {
+      font-size: 1.5rem;
+    }
+  
+    .search-bar {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

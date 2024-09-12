@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply Public Sans for body text */
+body {
+    font-family: 'Public Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Apply Georgia for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin-bottom: 0.5em;
+}
+
+/* Example styles for headings */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+/* Customize other elements as needed */
+p {
+    margin-bottom: 1em;
+}
+
+/* Import Public Sans from Google Fonts if not already available */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
